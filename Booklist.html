@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fa fa-book text-primary"></i>My<span class="text-primary">BooK</span>List
+        </h1>
+        <form id="formid">
+            <div class="form-group">
+                <label for="titleid">Title</label>
+                <input type="text" id="titleid" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="authorid">Author</label>
+                <input type="text" id="authorid" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="isbnid">ISBN#</label>
+                <input type="text" id="isbnid" class="form-control" />
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block" />
+            <table class="table table-striped  mt-4 justify-content-center">
+                <thead class="thead-dark w-100 ">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyid">
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="Booklist.js"></script>
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
